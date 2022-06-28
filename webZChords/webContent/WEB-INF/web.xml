@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>webZChords</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>Test</servlet-name>
+  	<servlet-class>test1.servlets.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Test</servlet-name>
+  	<url-pattern>/bonjour</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Accueil</servlet-name>
+  	<servlet-class>test1.servlets.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Accueil</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>AddChords</servlet-name>
+  	<servlet-class>test1.servlets.AddChords</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddChords</servlet-name>
+  	<url-pattern>/addChords</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>EffacerGrille</servlet-name>
+  	<servlet-class>test1.servlets.EffacerGrille</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EffacerGrille</servlet-name>
+  	<url-pattern>/effacerGrille</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Grille</servlet-name>
+  	<servlet-class>test1.servlets.Grille</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Grille</servlet-name>
+  	<url-pattern>/grille</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Play</servlet-name>
+  	<servlet-class>test1.servlets.Play</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Play</servlet-name>
+  	<url-pattern>/play</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Remove</servlet-name>
+  	<servlet-class>test1.servlets.Remove</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Remove</servlet-name>
+  	<url-pattern>/remove</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>PlayerMidi</servlet-name>
+  	<servlet-class>test1.servlets.PlayerMidi</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PlayerMidi</servlet-name>
+  	<url-pattern>/playerMidi</url-pattern>
+  </servlet-mapping>
+<jsp-config>
+<jsp-property-group>
+<url-pattern>*.jsp</url-pattern> <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+</jsp-property-group> </jsp-config>
+
+</web-app>
